@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>YouTube Clone</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+       rel="stylesheet">
+
+        <link rel="stylesheet" href="yotube-styles/general.css">
+        <link rel="stylesheet" href="yotube-styles/header.css">
+        <link rel="stylesheet" href="yotube-styles/video.css">
+        <link rel="stylesheet" href="yotube-styles/sidebar.css">
+
+        <script>
+function toggleMenu(element) {
+    element.classList.toggle("active");
+}
+</script>
+
+    </head>
+      
+    <body>
+        <div class="header">
+
+            <div class="left-section">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </div>
+
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="search">
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg"> <div class="tooltip">Search</div> 
+                </button> 
+
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg"> <div class="tooltip">Search With Your Voice</div>
+                </button>
+            </div>
+
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg"> <div class="tooltip">Create</div>
+                </div>
+
+                <div class="youtube-apps-icon-container">
+                    <img class="youtube-apps-icon" src="icons/youtube-apps.svg"> <div class="tooltip">YouTube Apps</div>
+                </div>
+
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg"> <div class="notifications-count">3</div> <div class="tooltip">Notifications</div>
+                </div>
+                
+
+                
+                 <a href="https://www.youtube.com/@Harshey-875"><img class="user-profile-icon"
+                 src="channel-profile/unnamed.jpg"></a>
+            </div>
+        </div>
+        
+        <div class="sidebar ">
+            <div class="sidebar-link"> <img src="icons/home.svg"> <div>Home</div> </div>
+
+            <div class="sidebar-link"> <img src="icons/explore.svg"> 
+                <div> 
+                    Explore
+            </div>
+         </div>
+
+
+
+            <div class="sidebar-link"><a href="https://www.youtube.com/feed/subscriptions"> <img src="icons/subscriptions.svg"> </a>
+                <div>Subscriptions</div> </div>
+
+            <div class="sidebar-link"> <img src="icons/originals.svg"> <div>Originals</div> </div>
+
+            <div class="sidebar-link">
+                <a href="https://music.youtube.com/"><img src="icons/youtube-music.svg"></a>
+                 <div>YouTube Music</div>  </div>
+
+            <div class="sidebar-link dropdown" onclick="toggleMenu(this)"> 
+            
+                    <img src="icons/library.svg">
+                    </label>
+                    <div>Library</div>
+                    
+                    <div class="content">
+                        <a> <img class="library-icons" src="library-icons/history_20dp_000000_FILL0_wght400_GRAD0_opsz20.svg">
+                            <div>History</div> </a>
+                        <a> <img class="library-icons" src="library-icons/playlist_play_20dp_000000_FILL0_wght400_GRAD0_opsz20 (1).svg">
+                            <div>Playlist</div> </a>
+                        <a> <img class="library-icons" src="library-icons/schedule_20dp_000000_FILL0_wght400_GRAD0_opsz20.svg">
+                            <div>Watch Later</div> </a>
+                        <a> <img class="library-icons" src="library-icons/thumb_up_20dp_000000_FILL0_wght400_GRAD0_opsz20 (1).svg">
+                            <div>Liked Videos</div> </a>
+                        <a> <img class="library-icons" src="library-icons/smart_display_20dp_000000_FILL0_wght400_GRAD0_opsz20 (1).svg">
+                            <div>Your Video</div> </a>
+                        <a> <img class="library-icons" src="library-icons/download_20dp_000000_FILL0_wght400_GRAD0_opsz20.svg">
+                            <div>Download</div> </a>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <div class="video-grid"> 
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/HK3LjI2InOg?si=pdKRLjcgWXzR9ZFt">
+                        <img  class="thumbnail" src="thumbnails/j-hope ‘Killin' It Girl.jpg"> 
+                    </a>
+                    <div class="video-time">2:39</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/bts-profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            j-hope Killin' It Girl (Solo Version)'' Official MV (Choreography ver.)
+                        </p>
+
+                        <p class="video-author">
+                            BANGTANTV
+                        </p>
+
+                        <p class="video-stats">
+                            71M &#183; 7 months ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img  class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                    </a>
+                    
+                    <div class="video-time">14:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+
+                        <p class="video-author">
+                            Marques Brownlee
+                        </p>
+
+                        <p class="video-stats">
+                            3.4M &#183; 6 months ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img  class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                    <div class="video-time">19:5z9</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture"> 
+                        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                            <img class="profile-picture" src="channel-profile/channel-6.jpeg">
+                        </a>
+                        
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Anything You Can Fit In The Circle I'll Pay For 
+                        </p>
+
+                        <p class="video-author">
+                            MrBEAST
+                        </p>
+
+                        <p class="video-stats">
+                            141M views &#183; 1 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/6PENpRhUYGU?si=Jg3nvWgwO__7GPhP">
+                        <img  class="thumbnail" src="thumbnails/mastero-on-tour.avif">
+                    </a>
+                    
+                    <div class="video-time">4:12</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/seventeen-channel-.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                           SEVENTEEN(세븐틴) - MAESTRO @SEVENTEEN TOUR 'FOLLOW' AGAIN TO SEOUL 
+                        </p>
+
+                        <p class="video-author">
+                            SEVENTEEN
+                        </p>
+
+                        <p class="video-stats">
+                            19M views &#183; 4 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+                        <img  class="thumbnail" src="thumbnails/thumbnail-11.webp">
+                    </a>
+                    
+                    <div class="video-time">4:10</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/channel-11.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                             Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                        </p>
+
+                        <p class="video-author">
+                            Destination Tips
+                        </p>
+
+                        <p class="video-stats">
+                            3M views &#183; 1 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=Cb70gcTVvYI">
+                        <img  class="thumbnail" src="thumbnails/run-bts-yet-to-come-busan.jpg">
+                    </a>
+                    
+                    <div class="video-time">3:30</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/bts-profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            BTS (방탄소년단) '달려라 방탄 (Run BTS)' @ BTS "Yet To Come" in BUSAN. 
+                        </p>
+
+                        <p class="video-author">
+                            BANGTANTV
+                        </p>
+
+                        <p class="video-stats">
+                            83M views &#183; 3 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=thBtkE54Abo">
+                        <img  class="thumbnail" src="thumbnails/v's-vlog-in-hawai.avif">
+                    </a>
+                    
+                    <div class="video-time">5:01</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/bts-profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                          [vlog]V's VLOG in Hawaii  
+                        </p>
+
+                        <p class="video-author">
+                            BANGTANTV
+                        </p>
+
+                        <p class="video-stats">
+                            1.3M views &#183; 1month ago
+                        </p>
+                    </div>  
+                </div>
+            </div> 
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+                        <img  class="thumbnail" src="thumbnails/thumbnail-12.webp">
+                    </a>
+                    
+                    <div class="video-time">4:51</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/channel-12.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                             What would happen if you didn't drink water? - Mia Nacamulli
+                        </p>
+
+                        <p class="video-author">
+                            TED-Ed
+                        </p>
+
+                        <p class="video-stats">
+                            12M views &#183; 5 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/U1VhxZYpZ0U?si=wd5_8hfPvARN_oIJ"> 
+                        <img  class="thumbnail" src="thumbnails/Enhypen-Shout-out.avif">
+                    </a>
+                    
+                    <div class="video-time">2:39</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/enhypen-profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            SHOUT OUT - ENHYPEN 
+                        </p>
+
+                        <p class="video-author">
+                            ENHYPEN
+                        </p>
+
+                        <p class="video-stats">
+                            44M views &#183; 3 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/-GQg25oP0S4?si=rykstyNY8641OpgS">
+                        <img  class="thumbnail" src="thumbnails/super-seventeen.avif">
+                    </a>
+                    
+                    <div class="video-time">3:33</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/hybe-labels-profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            SEVENTEEN (세븐틴) '손오공' Official MV
+                        </p>
+
+                        <p class="video-author">
+                            HYBE LABELS
+                        </p>
+
+                        <p class="video-stats">
+                            286M views &#183; 2 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                        <img  class="thumbnail" src="thumbnails/thumbnail-3.webp">
+                    </a>
+                    
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/channel-3.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                             Crazy Tik Toks Taken Moments Before DISASTER
+                        </p>
+
+                        <p class="video-author">
+                            SSSniperWolf
+                        </p>
+
+                        <p class="video-stats">
+                            12M views &#183; 1 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/B5CFyri4dLg?si=DIeBMlyUR2n1C_iD">
+                        <img  class="thumbnail" src="thumbnails/pied-peiper.avif">
+                    </a>
+                    
+                    <div class="video-time">4;17</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-profile/unnamed (1).jpg">  
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            BTS (방탄소년단) 'Pied Piper' MV
+                        </p>
+
+                        <p class="video-author">
+                            elisssa
+                        </p>
+
+                        <p class="video-stats">
+                            58M views &#183; 5 years ago
+                        </p>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </body>
+</html>
